@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAYTM</title>
+
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Navbar container */
+    nav {
+      background-color:white;
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Logo */
+    .logo {
+      font-size: 42px;
+      font-weight: bold;
+    }
+    .logo-image {
+      height: 40px;
+
+    }
+    .sign-in-style{
+        background-color: #02374c;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 4px;
+        text-decoration: none;
+        width:95px;
+        height:45px;
+        font-size: 14px;
+        border-radius:15px;
+        position: relative;
+        display: flex;
+    }
+    .circle{
+       background-color: #002970;
+       border-radius: 18px;
+       display: flex;
+
+       font-size: 14px;
+       color:white;
+       font-weight: 500;
+        width:30px;
+        height:30px;
+        right: 15px;
+        position: relative;
+
+    }
+    .sign-in_text{
+      color:white
+    }
+
+    /* Navbar links */
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin: 0 15px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color:black;
+      transition: color 0.3s;
+    }
+    .image_designing{
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .container_1{
+      margin-top: 20px;
+      background-color: whitesmoke;
+      border-radius: 25px;
+      margin: 25px;
+      padding: 15px;
+      background-size: cover;
+      width:1000px;
+      display: inline-block;
+    }
+    .mobile{
+      margin: 24px;
+      display: inline-block;
+      border-radius: 15px;
+      position: relative;
+    }
+    .recharge_para{
+      font-size: 17px;
+      margin-right: 8px;
+      margin-bottom: 8px;;
+      left:15px;
+      padding-left: 25px;
+    }
+    .heading{
+      font-size: 22px;
+      font-weight: 600;
+      margin-left: 25px;
+      padding-top: 15px;
+    }
+    .div_container{
+      display: inline-block;
+      margin-left: 25px;
+    }
+    .catalogue_design{
+      float: right;
+    }
+    .catalogue_image{
+      height:380px;
+      width:380px;
+      margin-right: 45px;
+      margin-top: 25px;
+    }
+    .second-image-design{
+      height:100px;
+      width:710px;
+      display:flex;
+        margin:5px;
+    }
+    .third-image-design{
+      height:100px;
+      width:710px;
+      margin:5px;
+    }
+    .Payment_history{
+      height:190px;
+      width:390px;
+      margin:10px;
+      margin-left: 25px;
+      margin-top: 35px;
+    }
+    .Requested_statement{
+      height:190px;
+      width:390px;
+      margin:10px;
+      margin-left: 25px;
+      margin-top: 35px;
+    }
+    .Balance{
+      height:190px;
+      width:390px;
+      margin:10px;
+      margin-left: 25px;
+      margin-top: 35px;
+    }
+    .container_3{
+      display: flex;
+      justify-content: center;
+    }
+    .container_4{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      float: left;
+      background-color: lightblue;
+    }
+    .travel{
+      float: left;
+    }
+    .container_5{
+      height: 700px;
+      background-color: whitesmoke;
+      margin-top: 50px;
+      padding-top: 25px;
+    }
+    .logo-design{
+      height: 30px;
+      width: 250px;
+      display: flex;
+      margin-top: 50px;
+      margin-left: 25px;
+    }
+    .heading_upi{
+      font-size: 28px;
+      font-weight: 600;
+      margin-left: 25px;
+      margin-top: 15px;
+      font-family: sans-serif;
+    }
+    .span{
+      color: #17E3EA;
+      font-size: 28px;
+      margin-left: 25px;
+    }
+    .paragraph_upi{
+      font-size: 36px;
+      margin-left: 25px;
+      margin-top: 10px;
+      width: 600px;
+      font:sans-serif;
+    }
+    .appstore{
+      height: 60px;
+      width: 200px;
+      margin-left: 25px;
+      margin-top: 20px;
+    }
+    .playstore{
+      height: 60px;
+      width: 200px;
+      margin-left: 15px;
+      margin-top: 20px;
+    }
+    .brand{
+      float: right;
+    }
+    .brand-image{
+      height: 600px;
+      width: 600px;
+      margin-right: 50px;
+      margin-top: -400px;
+    }
+    .trusted{
+      background-color: #1368BD;
+      border-radius: 25px;
+      height:40px;
+      width:1000px; 
+    margin-top: 5px;
+      margin-left: 15px;
+    }
+    .trusted_para{
+      font-size: 20px;
+      color:white;
+      padding-left: 55px;
+      padding-top: 2px;
+      margin-bottom: 25px;
+      text-align: center;
+      margin: 15px;
+    }
+    .logo-paytm{
+      height:37px;
+      margin-top: 2px;;
+    }
+    .container_6{
+      margin-top: 25px;
+      margin-left: 15px;
+      background-color: lightblue;
+      height:800px;
+      width:700px;
+      border-radius: 25px;
+      display: inline-block;
+    }
+  .credit_card{
+    margin-top: 35px;
+    margin-left: 25px;
+  }
+  .header{
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 25px;
+    margin-top: 15px;
+    font-family: sans-serif;
+  }
+  .span2{
+    color: #082aeb;
+    font-size: 30px;
+    margin-left: 25px;
+    padding: 20px;
+  }
+  .card_para{
+    font-size: 22px;
+    margin-left: 25px;
+    margin-top: 10px;
+    width: 600px;
+    font:sans-serif;
+  }
+  .apply_container{
+    margin-top: 25px;
+    display: flex;
+    margin-bottom: 25px;
+  }
+  .apply_para{
+    font-size: 24px;
+    color: blue;
+    text-align: center;
+    padding: 8px;
+    display: flex;
+    margin-left: 15px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    height:60px;
+    width:150px;
+    padding: 12px;
+    text-align: center;
+
+  }
+  .image_banks{
+    height:50px;
+    width:300px;
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+  .cards_bank{
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+  .container_7{
+      margin-top: 25px;
+      margin-left: 15px;
+      padding: 25px;
+      background-color: lightblue;
+      height:800px;
+      width:700px;
+      border-radius: 25px;
+      display: inline-block;
+    }
+    .header_2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 25px;
+    margin-top: 15px;
+    font-family: sans-serif;
+    }
+    .span_3{
+    color: #082aeb;
+    font-size: 30px;
+    margin-left: 25px;
+    padding: 20px;
+  }
+  .family_para{
+    font-size: 22px;
+    margin-left: 25px;
+    margin-top: 10px;
+    width: 600px;
+    font:sans-serif;
+  }
+  .get_it_container{
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .get_it_now_para{
+    font-size: 26px;
+    color: blue;
+    text-align: center;
+    display: flex;
+    margin-left: 15px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    height:60px;
+    width:150px;
+    padding: 12px;
+    text-align: center;
+  }
+   .container_8{
+      height: 900px;
+      background-color: whitesmoke;
+      margin-top: 50px;
+      padding-top: 25px;
+    }
+    .Paytm_money{
+      height: 90px;
+      width: 250px;
+      display: flex;
+      margin-top: 50px;
+      margin-left: 25px;
+    }
+    .learn_more{
+      font-size: 20px;
+      color: white;
+      margin-left: 25px;
+      margin-top: 15px;
+      border-radius: 25px;
+      border-width: 1px;
+      border-style: solid;
+      width:150px;
+      background-color: blue;
+      text-align: center;
+      font-family: sans-serif;
+      padding:2px;
+      height: 35px;
+    }
+    .terms{
+      font-size: 12px;
+      margin-left: 25px;
+      margin-top: 15px;
+      font-family: sans-serif;
+    }
+    .link{
+      margin-left: 25px;
+      font-size: 12px;
+      font-family: sans-serif;
+    }
+    .final_part{
+      height:800px;
+      background-color: whitesmoke;
+      margin-top: 50px;
+    }
+    .final_part_para{
+      margin-left: 25px;
+      font-size: 16px;
+      line-height: 2;
+      font-family: sans-serif;
+    }
+    .footer{
+      text-align: left;
+      margin-top: 25px;
+      padding-bottom: 15px;
+      font-size: 14px;
+      color: gray;
+      margin-left: 25px;
+    }
+    .social_media{
+      height:50px;
+      width:200px;
+      margin-bottom: 80px;
+      float: right;
+      margin-right: 25px;
+    }
+    /* =====================
+   PAYTM MOBILE VIEW (≤768px)
+===================== */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .sign-in-style {
+    margin-top: 10px;
+  }
+
+  /* HERO IMAGE */
+  .image_designing img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* RECHARGE SECTION */
+  .container_1 {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .div_container {
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+  }
+
+  .mobile {
+    margin: 10px auto;
+  }
+
+  /* CATALOG IMAGE */
+  .catalogue_design {
+    float: none;
+    text-align: center;
+  }
+
+  .catalogue_image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  /* BANNERS */
+  .second-image-design,
+  .third-image-design {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  /* PAYMENT CARDS */
+  .container_3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Payment_history,
+  .Requested_statement,
+  .Balance {
+    width: 90%;
+    height: auto;
+  }
+
+  /* UPI SECTION */
+  .container_5 {
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .paragraph_upi {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .brand {
+    float: none;
+  }
+
+  .brand-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  /* TRUSTED BAR */
+  .trusted {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  /* CREDIT & INSURANCE */
+  .container_6,
+  .container_7 {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+
+  .card_para,
+  .family_para {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  /* INVESTMENT & BUSINESS */
+  .container_8 {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  .final_part {
+    height: auto;
+  }
+
+  .social_media {
+    float: none;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo"><img src="./paytm2.jpg" alt="" class="logo-image"></div>
+    <ul class="nav-links">
+      <li><a href="#">Recharge & Bills</a></li>
+      <li><a href="#">Ticket Booking</a></li>
+      <li><a href="#">Payments & Services</a></li>
+      <li><a href="#">Paytm for Business</a></li>
+      <li><a href="#">Company</a></li>
+      <li><a href="#">Download App</a></li>
+      <div class="sign-in-style">
+        <img alt="user" src="https://pwebassets.paytm.com/commonwebassets/paytmweb/header/images/logoutImg.svg" class="circle">
+        <p class="sign_in_style"><a href="#">Sign IN</a></p>
+      </div>
+    </ul>
+  </nav>
+
+  <div class="image_designing">
+    <img src="./paytmimg.jpeg" alt="img">
+  </div>
+
+  <div class="container_1">
+    <p class="heading">Recharges & Bill Payment</p>
+    <div class="div_container">
+      <img src="./mobile_recharge.jpg" alt="mobile_recharge" class="mobile">
+      <p class="recharge_para">Mobile Recharge</p>
+    </div>
+    <div class="div_container">
+      <img src="./DTH.jpg" alt="DTH" class="mobile">
+      <p class="recharge_para">DTH Recharge</p>
+    </div>
+    <div class="div_container">
+      <img src="./Fast_tag.jpg" alt="FasTag Recharge" class="mobile">
+      <p class="recharge_para">FasTag Recharge</p>
+    </div>
+    <div class="div_container">
+      <img src="./electricity.jpg" alt="Electricity Bill" class="mobile">
+      <p class="recharge_para">Electricity Bill</p>
+    </div>
+    
+      <br>
+
+      <div class="div_container">
+      <img src="./loan.jpg" alt="Loan EMI Payment" class="mobile">
+      <p class="recharge_para">Loan EMI Payment</p>
+    </div>
+    <div class="div_container">
+      <img src="./metro.jpg" alt="Metro Recharge" class="mobile">
+      <p class="recharge_para">Metro Recharge</p>
+    </div>
+    <div class="div_container">
+      <img src="./toll.jpg" alt="Toll Gate Recharge" class="mobile">
+      <p class="recharge_para">Toll Gate Recharge</p>
+    </div>
+    <div class="div_container">
+      <img src="./all_products.jpg" alt="View All Products" class="mobile">
+      <p class="recharge_para">View All Products</p>
+    </div>
+  </div>
+  <div class="catalogue_design">
+    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/3171065/27389616900368101.png" alt="img" class="catalogue_image">
+  </div>
+
+    <div class="second-image-design">
+    <img alt="Banner 1" src="https://assetscdn1.paytm.com/images/catalog/view_item/3171063/25655116567472421.png" class="second-image-design">
+    <img alt="Banner 2" src="https://assetscdn1.paytm.com/images/catalog/view_item/3171064/32743882058815649.png" class="third-image-design">
+    </div>
+
+    <div class="container_3">
+      <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2988609/20668546951073032.png" class="Payment_history">
+      <img src="https://assetscdn1.paytm.com/images/catalog/view_item/3022660/20668615076908518.png" class="Requested_statement">
+      <img src="https://assetscdn1.paytm.com/images/catalog/view_item/3134667/20668676105948378.png" class="Balance">
+    </div>
+  <div class="container_5">
+    <img src="https://assetscdn1.paytm.com/images/catalog/view/342367/1725447383123.png" alt="brandLogo" class="logo-design">
+    <h3 class="heading_upi">Pay anyone directly from your</h3>
+    <span class="span">Bank account</span>
+    <p class="paragraph_upi">Pay anyone,everywhere.Make contactless & secure payments in-stores online using Paytm UPI or Directly from your Bank Account.Plus,send & receive money from anyone.</p>
+    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2834703/1725432129171.png" class="appstore">
+    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2834704/1725432148873.png" class="playstore">
+    <div class="brand">
+      <img src="https://assetscdn1.paytm.com/images/catalog/view/1752741641420.png" alt="brand" class="brand-image">
+    </div>
+  </div>
+
+  <div class="trusted">
+    <img src="./paytm logo1.png" class="logo-paytm">
+    <span class="trusted_para">24*7 Trusted customer support to assist and help you in every step of your journey</span>
+  </div>
+
+  <div class="container_6">
+    <img src="./credit cards.png" class="credit_card">
+    <h2 class="header">One destination for</h2>
+    <span class="span2">Credit Cards</span>
+    <p class="card_para">Paytm HDFC,SBI Card & Axis Bank Credit Card with assured Cashback and incredible offers</p>
+    <div class="apply_container">
+      <p class="apply_para">Apply Now</p>
+      <img src="https://assetscdn1.paytm.com/images/catalog/view_item/1741675100265.png" alt="link" class="image_banks">
+    </div>
+    <img src="./cards_credit.jpg" class="cards_bank">
+  </div>
+  
+  <div class="container_7">
+    <img src="./family.jpg" class="family">
+    <h2 class="header_2">Insurance ka </h2>
+    <span class="span_3">Super Market</span>
+    <p class="family_para">A smart,simple & Transparent Platform to explore & Purchase insurance</p>
+    <div class="get_it_container">
+      <p class="get_it_now_para">Get it now</p>
+    </div>
+    <img src="./family_1.jpg" class="family_image">
+  </div>
+
+  <div class="container_8">
+    <img src="./paytm money.jpg" alt="brandLogo" class="Paytm_money">
+    <h3 class="heading_upi">Everything you need to start your</h3>
+    <span class="span">Investment journey</span>
+    <p class="paragraph_upi">Whether you're a begineer or pro,Paytm<br>Money helps you invest smarter and achieve<br>financial independence.Get access to expert opinion,mutual funds SIP ,F&O trading and <br> much more - all in one app.</p>
+    <p class="learn_more">Learn More</p>
+    <p class="terms">Investments in the securities market are subjected to market risks,read all related documents carefully before investing.<br>For complete Terms & Conditions and disclaimers visit:</p>
+    <a href="https://www.paytmmoney.com/stocks/policies/terms" class="link">https://www.paytmmoney.com/stocks/policies/terms</a>
+    <div class="brand">
+      <img src="./Paytm_mobile.jpg" alt="brand" class="brand-image">
+    </div>
+  </div>
+
+  <div class="container_8">
+    <img src="./paytm for business.jpg" alt="brandLogo" class="Paytm_money">
+    <h3 class="heading_upi">Accept payments</h3>
+    <span class="span">online & offline</span>
+    <p class="paragraph_upi"> Millions of small & big businessess use Paytm to accept payments anywhere any time with a widerange of solutions for all kind of merchants.</p>
+    <p class="learn_more">Learn More</p>
+    <div class="brand">
+      <img src="./businessoverview.jpg" alt="brand" class="brand-image">
+    </div>
+  </div>
+  <div class="final_part">
+    <div class="final_part_para">
+   <p> Investor Relations <hr></p>
+   <p>More about Paytm <hr></p>
+   <p>Company <hr></p>
+   <p>Recharge & Pay Bills <hr>
+   </p>
+   <p>Pay Loan EMI,Insurance Premimum & Education Fee <hr></p>
+   <p>Book Travel & Entertainment <hr></p>
+   <p>Investment & Miscellaneous <hr></p>
+   <p>Loans and credit cards <hr></p>
+   <p>Financial Tools & Calculators <hr></p>
+   </div>
+   <hr>
+   <footer class="footer">2025 Paytm</footer>
+   <img src="./socialmedia.jpg" class="social_media">
+  </div>
+</body>
+</html>
